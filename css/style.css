@@ -1,0 +1,250 @@
+footer{
+    * {
+        font-family: "Inter", sans-serif;
+    }
+}
+* {
+    font-family: "Inter", sans-serif;
+}
+:root {
+
+    --dark-blue-100: #609ed4;
+    --dark-blue-200:#356EA9;
+    --dark-blue-300:#0A3871;
+    --dark-blue-400:#072B61;
+    --dark-blue-500:#052051;
+    --light-blue-100:#F3F5FC;
+    --light-blue-200:#EFF1FA;
+    --light-blue-300:#E9ECF8;
+    --light-blue-400:#AAB2D5;
+    --light-blue-500:#757FB2;
+    --gray-100:#CED4DA;
+    --gray-200:#ADB5BD;
+    --gray-300:#868E96;
+    --gray-400:#495057;
+    --gray-500:#343A40;
+
+}
+body{
+    background-color: var(--light-blue-100);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+.logo-encabezado{
+    position: relative;
+    width: 120px;
+    height: 48px;
+    margin-top: 40px;
+    margin-left: -160px;
+    gap: 40px;
+}
+.principal-container{
+    display: flex;
+    width: auto;
+    height: auto;
+}
+.principal-container-left{
+    margin-top: 80px;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.class-txt-in{
+    font-size: 32px;
+    color: var(--dark-blue-300);
+    background-color: transparent;
+    width: 680px;
+    height: 500px;
+    border: none;
+    resize: none;
+}
+.class-txt-in:focus {
+    outline: none;
+}
+.class-txt-in::placeholder{
+    color: var(--dark-blue-300);
+}
+.info{
+    margin-bottom: 10px;
+}
+.text-info{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+.material-symbols-outlined{
+    margin-right: 5px;
+}
+.buttons{
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.encriptar-button{
+width: 328px;
+height: 67px;
+border: 1px solid var(--dark-blue-300);
+border-radius: 24px;
+padding: 24px;
+gap: 8px;
+background-color: var(--dark-blue-300);
+color: white;
+font-size: 16px;
+} 
+.descifrar-button{
+width: 328px;
+height: 67px;
+border: 1px solid var(--dark-blue-300);
+border-radius: 24px;
+padding: 24px;
+gap: 8px;
+background-color: transparent;
+color: var(--dark-blue-300);
+font-size: 16px;
+}
+.textbox-output{
+position: relative;
+top: -50px;
+width: 310px;
+height:710px;
+margin-left: 50px;
+padding: 30px;
+border-radius: 32px;
+background-color: rgb(255, 255, 255);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.20);
+}
+.no-content-items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.no-message{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.no-intruction{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.final-content{
+    display: none;
+    
+}
+.class-txt-out{
+font-size: 24px;
+width: 308px;
+height: 600px;
+padding: 10px;
+border: none;
+resize: none;
+}
+.class-txt-out:focus {
+    outline: none;
+}
+.copy-container{
+    margin-top: 30px;
+}
+.text-credits{
+    display: flex;
+    justify-content: center;
+}
+.name{
+    margin-left: 5px;
+}
+/*
+@media (width <= 1350px)*/
+@media (max-width: 1150px) and (min-width: 710px) {
+    .logo-encabezado{
+        margin-left: -40px;
+    }
+    .principal-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .principal-container-left{
+        margin-left: 0px;
+    }
+    .principal-container-right{
+        margin-top: 50px;
+    }
+    .muneco-lupa{
+        display:none;
+    }
+    .textbox-output{
+        top: 0px;
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+    .no-message{
+        margin-top: 0px;
+    }
+    .final-content{
+        width: 100%;
+        height: auto;
+    }
+    .class-txt-out{
+        width: 100%;
+        height: 350px;
+    }
+}
+@media (width <= 710px){
+    .logo-encabezado{
+        margin-left: -20px;
+    }
+    .principal-container{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+    }
+    .principal-container-left{
+        margin:20px;
+        margin-top: 80px;
+    }
+    .principal-container-right{
+        margin: 20px;
+        margin-top: 40px;
+    }
+    .muneco-lupa{
+        display:none;
+    }
+    .textbox-output{
+        top: 0px;
+        width: auto;
+        height: auto;
+        margin-left: 0px;
+    }
+    .no-message{
+        margin-top: 0px;
+    }
+    .final-content{
+        width: 100%;
+        height: auto;
+    }
+    .class-txt-in{
+        width: 100%;
+        height: 260px;
+    }
+    .class-txt-out{
+        width: 100%;
+        height: 350px;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .copy-button{
+        width: 100%;
+    }
+}
