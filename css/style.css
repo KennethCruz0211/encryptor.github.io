@@ -1,8 +1,3 @@
-footer{
-    * {
-        font-family: "Inter", sans-serif;
-    }
-}
 * {
     font-family: "Inter", sans-serif;
 }
@@ -195,6 +190,12 @@ resize: none;
     .class-txt-out{
         width: 100%;
         height: 350px;
+    }
+    .copy-button{
+        width: 100%;
+    }
+    .text-credits{
+        margin-top: 20px;
     }
 }
 @media (width <= 710px){
