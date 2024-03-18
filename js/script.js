@@ -35,16 +35,17 @@ function encriptar(fraseEncriptada){
     
 }
 
-function desencriptar(fraseEncriptada){
-    for(let i = 0; i< matriz_code.length ; i++){
-        if(fraseEncriptada.includes(matriz_code[i][1])){
-            fraseEncriptada = fraseEncriptada.replaceAll(
-                matriz_code[i][1],
-                matriz_code[i][0]
-            )
+function desencriptar(fraseEncriptada) {
+    let textoDesencriptado = fraseEncriptada;
+
+    for (let i = matriz_code.length - 1; i >= 0; i--) {
+        const codigo = matriz_code[i][1];
+        while (textoDesencriptado.includes(codigo)) {
+            textoDesencriptado = textoDesencriptado.replace(codigo, matriz_code[i][0]);
         }
     }
-    return fraseEncriptada;
+
+    return textoDesencriptado;
 }
 function verifica() {
     const texto = encriptar(campoEntrada.value);
